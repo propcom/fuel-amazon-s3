@@ -9,7 +9,7 @@ A FuelPHP bootstrap.php and a \S3\S3 class has been added to take advantage of F
 Usage
 -----
 
-You will need a config, something along the lines of this:
+You will need a config called s3.php which is something along the lines of this:
 
 	<?php
 	return array(
