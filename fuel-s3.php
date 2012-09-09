@@ -22,6 +22,6 @@ class S3 extends \S3 {
 		$secret_key = \Config::get('s3.secret_access_key', null);
 		$ssl = \Config::get('s3.use_ssl', null) ?: false;
 
-		return new static($access_key, $secret_key, $ssl);
+		return new static($access_key, $secret_key, $ssl, static::$endpoint);
 	}
 }
